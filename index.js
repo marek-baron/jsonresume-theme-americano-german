@@ -4,12 +4,12 @@ const handlebarsWax = require('handlebars-wax');
 const moment = require('moment');
 
 handlebars.registerHelper({
-  removeProtocol: url => url.replace(/.*?:\/\//g, ''),
-  concat: (...args) => args.filter(arg => typeof arg !== 'object').join(''),
-  formatAddress: (...args) => args.filter(arg => typeof arg !== 'object').join(' '),
-  formatDate: date => moment(date).format('YYYY'),
+  removeProtocol: (url) => url.replace(/.*?:\/\//g, ''),
+  concat: (...args) => args.filter((arg) => typeof arg !== 'object').join(''),
+  formatAddress: (...args) => args.filter((arg) => typeof arg !== 'object').join(' '),
+  formatDate: (date) => moment(date).format('YYYY'),
   //   formatDate: (date) => moment(date).format('MM-YYYY'),
-  lowercase: s => s.toLowerCase(),
+  lowercase: (s) => s.toLowerCase(),
   eq: (a, b) => a === b,
 });
 
