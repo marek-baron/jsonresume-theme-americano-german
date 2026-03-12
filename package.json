@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-americano-german",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "minimalistic german theme for JSON Resume. Based on macchiato-theme.",
   "author": "Marek Baron",
   "scripts": {
