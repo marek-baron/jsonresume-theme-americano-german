@@ -17,7 +17,7 @@
 		{{/if}}
 		{{#if phone}}
 		<div class="phone">
-			<strong>Phone</strong>
+			<strong>Tel Nr.</strong>
 			{{phone}}
 		</div>
 		{{/if}}
@@ -28,29 +28,29 @@
 		</div>
 		{{/if}}
 		{{#location}}
-		<h3>Location</h3>
+		<h3>Ort</h3>
 		<section id="location">
 			{{#if address}}
 			<div class="address">
-				<strong>Address</strong>
+				<strong>Adresse</strong>
 				{{address}}
 			</div>
 			{{/if}}
 			{{#if postalCode}}
 			<div class="postalCode">
-				<strong>Postal code</strong>
+				<strong>PLZ</strong>
 				{{postalCode}}
 			</div>
 			{{/if}}
 			{{#if city}}
 			<div class="city">
-				<strong>City</strong>
+				<strong>Stadt</strong>
 				{{city}}
 			</div>
 			{{/if}}
 			{{#if countryCode}}
 			<div class="countryCode">
-				<strong>Country code</strong>
+				<strong>Ländercode</strong>
 				{{countryCode}}
 			</div>
 			{{/if}}
@@ -63,7 +63,7 @@
 		</section>
 		{{/location}}
 		{{#if profiles.length}}
-		<h3>Profiles</h3>
+		<h3>Profile</h3>
 		<section id="profiles">
 			{{#each profiles}}
 			<div class="item">

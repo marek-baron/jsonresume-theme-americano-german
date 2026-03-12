@@ -4,20 +4,6 @@
 /*----- Dimensions and sizes -----*/
 /* Base */
 @font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
-}
-
-@font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
@@ -83,14 +69,14 @@ h6 {
 }
 
 h1 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 1px;
 }
 
 h2 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: .5px;
@@ -149,7 +135,7 @@ a .fa-external-link {
 
 p,
 li {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 blockquote {
@@ -167,6 +153,7 @@ em {
 ul {
   margin: 10px 0 0;
   -webkit-padding-start: 25px;
+  padding: 0 30px;
 }
 
 ul li {
@@ -196,6 +183,7 @@ ul.two-column li {
 
 @page {
   size: A4;
+  margin: 20mm 12mm 20mm 12mm;
 }
 
 .container {
@@ -205,7 +193,7 @@ ul.two-column li {
 .keyline {
   width: 45px;
   margin: 8px 0 10px;
-  border-top: 1px solid #56817A;
+  border-top: 1px solid #567281;
 }
 
 .pull-left {
@@ -231,7 +219,7 @@ ul.two-column li {
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  border: 2px solid #56817A;
+  border: 2px solid #567281;
 }
 
 .summary {
@@ -255,7 +243,7 @@ ul.two-column li {
   min-height: 792px;
   display: block;
   margin: 0 auto;
-  border-top: 10px solid #56817A;
+  /* border-top: 10px solid #567281; */
   padding: 36px 22px 30px 34px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
@@ -268,8 +256,8 @@ ul.two-column li {
 
 .left-column {
   float: left;
-  width: 160px;
-  margin-right: 20px;
+  width: 210px;
+  margin-right: 10px;
   word-wrap: break-word;
 }
 
@@ -295,22 +283,46 @@ ul.two-column li {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 36px 0 30px;
+    padding: 36px 0 60px;
     box-shadow: none;
   }
 
-  .page .resume-header,
-  .page .resume-content {
-    padding: 0 22px 0 34px;
-  }
+.resume-content {
+  display: flex;
+  align-items: flex-start;
+}
 
-  .container {
-    page-break-inside: avoid;
-  }
+.left-column {
+  width: 210px;
+  margin-right: 10px;
+  flex: 0 0 210px;
+}
 
-  .work-container .item {
-    page-break-inside: avoid;
-  }
+.right-column {
+  flex: 1 1 auto;
+  overflow: visible;
+}
+
+.page .resume-header,
+.page .resume-content {
+  padding: 0 22px 20px 34px;
+}
+
+.container {
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+.work-container {
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+.work-container .item {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
 
   .fa-external-link {
     display: none;
@@ -357,7 +369,7 @@ ul.two-column li {
   text-transform: none;
   display: inline-block;
   vertical-align: middle;
-  width: 139px;
+  width: 180px;
 }
 
 .references-container .fa {
