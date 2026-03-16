@@ -402,3 +402,9 @@ ul.two-column li {
   background: ghostwhite;
   border-radius: 5px;
 }
+
+.language-item{
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
