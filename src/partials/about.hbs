@@ -1,5 +1,18 @@
 {{#resume.basics}}
 <div class="container about-container">
+
+  {{#if image}}
+    <div class="profile-image">
+      <img src="{{image}}" alt="{{name}}">
+    </div>
+  {{else}}
+    {{#if picture}}
+      <div class="profile-image">
+        <img src="{{picture}}" alt="{{name}}">
+      </div>
+    {{/if}}
+  {{/if}}
+
     {{> title value="Persönliche Daten"}}
 
     {{#if birthday}}

@@ -216,9 +216,9 @@ ul.two-column li {
 }
 
 .profile-pic img {
-  height: 52px;
+  height: auto;
   width: 52px;
-  border-radius: 50%;
+  border-radius: 8px;
   border: 2px solid #567281;
 }
 
@@ -401,10 +401,29 @@ ul.two-column li {
   padding: .15em;
   background: ghostwhite;
   border-radius: 5px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .language-item{
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
+}
+
+.profile-image {
+   margin: 0 0 16px; 
+}
+
+.profile-image img {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.skills-container .container{
+	page-break-inside: avoid;
 }
